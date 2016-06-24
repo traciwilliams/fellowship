@@ -21,96 +21,73 @@ var body = document.body;
 var section = '<section></section>';
 
 function makeMiddleEarth() {
-  var middleEarth = $(section);
-  middleEarth.attr('id','middle-earth');
-  $('body').append(middleEarth);
-  lands.forEach(function(land){
-    $('#middle-earth').append('<article><h1>'+land+'</h1></article>');
-  });
+  // your answers here
 }
 
 makeMiddleEarth();
 
 function makeHobbits(){
-  $('article:first-child').append('<ul></ul>');
-  hobbits.forEach(function(hobbit){
-    $('ul').append('<li class="hobbit">'+hobbit+'</li>');
-  });
+  // your answers here
 }
 
 makeHobbits();
 
 function keepItSecretKeepItSafe(){
-  $('.hobbit:first-child').append('<div id="the-ring" class="magic-imbued-jewelry"></div>');
+  // your answers here
 }
 
 keepItSecretKeepItSafe();
 
 function makeBuddies(){
-  $('article:nth-child(2)').append('<aside><ul></ul></aside>');
-  buddies.forEach(function(buddy){
-    $('aside ul').append('<li>'+buddy+'</li>');
-  });
-
+  // your answers here
 }
 
 makeBuddies();
 
 function beautifulStranger(){
-  $('aside ul li').eq(3).html('Aragorn');
+  // your answers here
 }
 
 beautifulStranger();
 
 function leaveTheShire(){
-    $('aside ul').append($('article ul li'));
+  // your answers here
 }
 
 leaveTheShire();
 
 function forgeTheFellowship() {
-  $('aside').append('<div id="the-fellowship"></div>');
-  $('#the-fellowship').append($('aside ul'));
-  $('aside ul li').each(function(names){
-    console.log($(this).text()); //fuck alert boxes
-  })
+  // your answers here
 }
 
 forgeTheFellowship();
 
 function theBalrog(){
-  $('aside ul li').eq(4).text('Gandalf the White');
-  $('aside ul li').eq(4).css({'backgroundColor':'white','border':'3px solid grey'});
+  // your answers here
 }
 
 theBalrog();
 
 function hornOfGondor() {
-  console.log('The horn of Gondor has been blown!');
-  $('aside ul li').eq(8).remove();
+  // your answers here
 }
 
 hornOfGondor();
 
 function itsDangerousToGoAlone() {
-  $('article').eq(2).append($('aside ul li').eq(0));
-  $('article').eq(2).append($('aside ul li').eq(0));
-  $('article').eq(2).append('<div id="mount-doom"></div>');
+  // your answers here
 }
 
 itsDangerousToGoAlone();
 
 function weWantsIt() {
-  $('article').eq(2).append('<div id="gollum"></div>');
-  $('#gollum').append($('#the-ring'));
-  $('#mount-doom').append($('#gollum'));
+  // your answers here
 }
 
 weWantsIt();
 
 function thereAndBackAgain(){
-  $('#gollum').remove();
-  $('article').eq(0).append($('.hobbit'));
+  // your answers here
 }
 
 thereAndBackAgain();
