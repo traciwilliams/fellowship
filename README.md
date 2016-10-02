@@ -34,7 +34,7 @@ Javascript like the weekend's prompt, you should use jQuery selectors to manipul
 var makeMiddleEarth = function () {
    // create a section tag with an id of `middle-earth`
    // add each land as an `article` tag
-   // inside each `article` tag include an `h1` with the name of the land
+   //inside each `article` tag include an `h1` with the name of the land
    // append `middle-earth` to your document `body`
 };
 
@@ -55,7 +55,7 @@ var makeHobbits = function () {
 var keepItSecretKeepItSafe = function () {
    // create a div with an id of `'the-ring'`
    // give the div a class of `'magic-imbued-jewelry'`
-   // add the ring as a child of `Frodo`
+   // add the ring as a child of `Frodo` ---> #middle-earth > article:nth-child(1) > li:nth-child(2)
 };
 ```
 
@@ -133,6 +133,7 @@ var itsDangerousToGoAlone = function (){
 ```js
 var thereAndBackAgain = function () {
    // remove `Gollum` and `the Ring` from the document
+
    // Move all the `hobbits` back to `the shire`
 };
 ```
